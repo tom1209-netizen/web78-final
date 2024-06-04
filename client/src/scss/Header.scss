@@ -1,4 +1,3 @@
-/* src/components/Header.scss */
 .header {
   display: flex;
   justify-content: space-between;
@@ -8,7 +7,8 @@
 
   border-bottom: 2px solid rgb(232, 232, 232);
 
-  .menu-icon, .search-icon {
+  .menu-icon,
+  .search-icon {
     font-size: 24px;
   }
 
@@ -29,5 +29,40 @@
         color: white;
       }
     }
+  }
+
+  .search-icon {
+  }
+
+  .expanded {
+    display: flex;
+  }
+
+  .search-icon.expanded {
+    width: 180px; 
+    display: flex; 
+  }
+
+  .search-input {
+    display: none;
+    top: 100%; 
+    left: 0;
+    width: inherit; 
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .search-icon.expanded .search-input {
+    display: block; 
+  }
+
+  .search-input:focus {
+    outline: none; 
+  }
+
+  .header:not(:hover) .search-icon.expanded .search-input {
+    display: none;
   }
 }

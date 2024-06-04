@@ -3,13 +3,19 @@ import connectDB from './config/db.js';
 import bodyParser from 'body-parser';
 import authRoutes from './routes/authRoutes.js';
 import movieRoutes from './routes/movieRoutes.js';
+import cors from 'cors';
 
 const app = express();
+
+const corsOptions = {
+  origin: "http://localhost:5173",
+};
 
 // Connect Database
 connectDB();
 
 // Init Middleware
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.send('API Running'));

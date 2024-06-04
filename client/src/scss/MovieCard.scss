@@ -1,7 +1,6 @@
 /* src/components/MovieCard.scss */
 .movie-card {
   background-color: #fff;
-  border-radius: 10px;
 
   width: 200px;
   margin: 20px;
@@ -17,11 +16,9 @@
 .movie-card img {
   width: 100%;
   height: auto;
-}
 
-// .movie-info {
-//   padding: 10px;
-// }
+  border-radius: 5px;
+}
 
 .movie-info h3 {
   margin: 5px 0;
