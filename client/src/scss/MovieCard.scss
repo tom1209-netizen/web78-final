@@ -1,0 +1,33 @@
+/* src/components/MovieCard.scss */
+.movie-card {
+  background-color: #fff;
+  border-radius: 10px;
+
+  width: 200px;
+  margin: 20px;
+
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+// .movie-info {
+//   padding: 10px;
+// }
+
+.movie-info h3 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.movie-info p {
+  color: #555;
+}

@@ -1,0 +1,59 @@
+.modal-card {
+  display: flex;
+  width: 70vw;
+  height: 60vh;
+
+  background-color: white;
+  border-radius: 20px;
+
+  padding: 30px;
+
+  position: relative;
+
+  .modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #000;
+  }
+
+  .modal-poster {
+    flex: 3;
+    position: relative;
+
+    img {
+      width: 95%;
+
+      border-radius: 5px;
+      position: absolute;
+      bottom: -10px;
+      left: -50px
+    }
+  }
+
+  .modal-details {
+    flex: 7;
+
+    .title {
+    }
+
+    .intro {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .play-button {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+}

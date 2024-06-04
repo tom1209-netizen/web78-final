@@ -1,0 +1,33 @@
+/* src/components/Header.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px;
+
+  border-bottom: 2px solid rgb(232, 232, 232);
+
+  .menu-icon, .search-icon {
+    font-size: 24px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 24px;
+    font-weight: normal;
+
+    .title-circle {
+      background-color: #f8b400;
+      border-radius: 50%;
+      padding: 8px;
+
+      p {
+        color: white;
+      }
+    }
+  }
+}

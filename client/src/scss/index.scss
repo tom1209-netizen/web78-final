@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8b400;
+
+  height: 100dvh;
+  width: 100dvw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

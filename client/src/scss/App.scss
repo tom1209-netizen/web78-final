@@ -1,0 +1,18 @@
+/* src/App.scss */
+.App {
+  border-radius: 20px;
+
+  background-color: white;
+
+  .movie-tag {
+    color: rgb(129, 144, 163);
+    padding: 20px 20px 0px 20px;
+    font-size: 20px;
+  }
+
+  .movie-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
